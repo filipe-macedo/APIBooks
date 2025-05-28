@@ -1,2 +1,6 @@
 Flask
 flask_sqlalchemy
+flasgger
+pytest
+pytest-flask
+pytest-cov

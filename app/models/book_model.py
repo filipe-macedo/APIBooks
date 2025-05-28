@@ -7,3 +7,13 @@ class Book(db.Model):
     genre: Mapped[str]
     year: Mapped[int]
     title: Mapped[str]
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "title": self.title,
+            "author": self.author,
+            "year": self.year,
+            "genre": self.genre
+        }
+
